@@ -5,11 +5,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        AppView appView = new AppView();
-
+        Controller controller = new Controller();
+        controller.view.stage.show();
     }
-
-
     public static void main(String[] args) {
         launch(args);
     }
