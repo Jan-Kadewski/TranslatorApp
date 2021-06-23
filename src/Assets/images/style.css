@@ -1,0 +1,44 @@
+.split-menu-button{
+    -fx-focus-traversable: false;
+    -fx-font-size: 24;
+    -fx-font-family: "Courier New";
+    -fx-font-weight: Bold;
+    -fx-pref-width:280 ;
+    -fx-pref-height: 40;
+}
+.image-view{
+    -fx-opacity: .7;
+    -fx-translate-x: 320;
+    -fx-translate-y: 8;
+}
+.button {
+    -fx-background-color: #73AD21;
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;
+    -fx-text-alignment: center;
+    -fx-pref-height: 60;
+    -fx-pref-width: 150;
+    -fx-translate-x: 280;
+    -fx-translate-y: 410;
+}
+#listToLang{
+    -fx-translate-x: 420;
+}
+.text-area .content{
+    -fx-background-color: lightblue;
+    -fx-background-radius: 55px;
+
+
+}
+.text-area{
+    -fx-text-fill: white;
+    -fx-font-size:15px;
+}
+#currentTextArea{
+    -fx-translate-x: 65;
+    -fx-translate-y: 200;
+}
+#translatedTextArea{
+    -fx-translate-y: 500;
+    -fx-wrap-text: true;
+}
