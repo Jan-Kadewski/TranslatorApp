@@ -53,18 +53,6 @@ public class Controller {
                 view.splitMenuButtonToLang.setText(view.toLang1.getText());
             }
         });
-
-        view.toLang2.setOnAction(e -> {
-            if (e.getSource() == view.toLang2) {
-                view.splitMenuButtonToLang.setText(view.toLang2.getText());
-            }
-        });
-
-        view.toLang3.setOnAction(e -> {
-            if (e.getSource() == view.toLang3) {
-                view.splitMenuButtonToLang.setText(view.toLang3.getText());
-            }
-        });
     }
 
     public void changeLanguageArrowAction() {

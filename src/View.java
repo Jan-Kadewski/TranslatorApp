@@ -43,7 +43,7 @@ public class View {
         model = new Model();
         initApp();
         createListToChooseLanguageFrom("en", "de", "pl", "en");
-        createListToChooseLanguageToTranslate("en", "de", "pl", "pl");
+        createListToChooseLanguageToTranslate("pl", "pl");
         addArrowsToChangeLanguage();
         createTextAreaForCurrentText();
         createTextAreaForTranslatedText();
@@ -72,13 +72,11 @@ public class View {
         root.getChildren().add(splitMenuButtonFromLang);
     }
 
-    public void createListToChooseLanguageToTranslate(String lang1, String lang2, String lang3, String defaultText) {
+    public void createListToChooseLanguageToTranslate(String lang1, String defaultText) {
         splitMenuButtonToLang = new SplitMenuButton();
         splitMenuButtonToLang.setId("listToLang");
         toLang1 = new MenuItem(lang1);
-        toLang2 = new MenuItem(lang2);
-        toLang3 = new MenuItem(lang3);
-        splitMenuButtonToLang.getItems().addAll(toLang1, toLang2, toLang3);
+        splitMenuButtonToLang.getItems().addAll(toLang1);
         splitMenuButtonToLang.setText(defaultText);
         root.getChildren().add(splitMenuButtonToLang);
     }
