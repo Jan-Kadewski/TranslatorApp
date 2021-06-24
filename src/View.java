@@ -1,12 +1,23 @@
 import javafx.scene.Group;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.CycleMethod;
+import javafx.scene.paint.LinearGradient;
+import javafx.scene.paint.Stop;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class View {
     Model model;
@@ -25,6 +36,7 @@ public class View {
     TextArea currentTextArea;
     TextArea translatedTextArea;
     Button translateButton;
+    List<MenuItem> listOfMenuItem;
 
 
     public View() {
@@ -47,7 +59,7 @@ public class View {
         scene.getStylesheets().add("Assets/images/style.css");
         stage.setScene(scene);
         stage.show();
-        scene.setFill(Color.LIGHTGRAY);
+        scene.setFill(new LinearGradient(0, 0, 1, 1, true, CycleMethod.NO_CYCLE, new Stop(0, Color.web("#0093E9")), new Stop(1, Color.web("#80D0C7"))));
     }
 
     public void createListToChooseLanguageFrom(String lang1, String lang2, String lang3, String defaultText) {

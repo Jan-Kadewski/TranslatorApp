@@ -1,9 +1,18 @@
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.util.Duration;
+
 import javax.naming.ldap.Control;
 import java.io.IOException;
 
 public class Controller {
     View view;
     Config cfg;
+    ImageView viewForSpinner = null;
 
     public Controller() throws IOException, InterruptedException {
         view = new View();
@@ -30,12 +39,12 @@ public class Controller {
                 view.splitMenuButtonFromLang.setText(view.fromLang2.getText());
             }
         });
-
         view.fromLang3.setOnAction(e -> {
             if (e.getSource() == view.fromLang3) {
                 view.splitMenuButtonFromLang.setText(view.fromLang3.getText());
             }
         });
+
     }
 
     public void setTextOnButtonLangTo() {

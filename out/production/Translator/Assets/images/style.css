@@ -1,16 +1,22 @@
-.split-menu-button{
+.scene{
+    -fx-background-color: linear-gradient( #0093E9 0%, #80D0C7 100%);
+
+}
+.split-menu-button {
     -fx-focus-traversable: false;
     -fx-font-size: 24;
     -fx-font-family: "Courier New";
     -fx-font-weight: Bold;
-    -fx-pref-width:280 ;
+    -fx-pref-width: 280;
     -fx-pref-height: 40;
 }
-.image-view{
+
+.image-view {
     -fx-opacity: .7;
     -fx-translate-x: 320;
     -fx-translate-y: 8;
 }
+
 .button {
     -fx-background-color: #73AD21;
     -fx-text-fill: white;
@@ -19,26 +25,38 @@
     -fx-pref-height: 60;
     -fx-pref-width: 150;
     -fx-translate-x: 280;
-    -fx-translate-y: 410;
+    -fx-translate-y: 420;
+    -fx-font-weight: bold;
 }
-#listToLang{
+.button:hover{
+    -fx-scale-x: 1.15;
+
+}
+
+#listToLang {
     -fx-translate-x: 420;
 }
-.text-area .content{
+
+.text-area .content {
     -fx-background-color: lightblue;
-    -fx-background-radius: 55px;
-
-
 }
-.text-area{
+
+.text-area {
     -fx-text-fill: white;
     -fx-font-size:15px;
 }
-#currentTextArea{
-    -fx-translate-x: 65;
+
+#currentTextArea {
+    -fx-translate-x: 35;
     -fx-translate-y: 200;
+
 }
-#translatedTextArea{
+#translatedTextArea {
+    -fx-translate-x: 35;
     -fx-translate-y: 500;
     -fx-wrap-text: true;
+}
+.menu-item{
+     -fx-opacity: .8;
+    -fx-pref-width: 280;
 }
